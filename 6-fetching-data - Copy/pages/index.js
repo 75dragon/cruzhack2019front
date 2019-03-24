@@ -11,6 +11,10 @@ import fetch from 'isomorphic-unfetch'
 //       </li>
 //     ))}
 //   </ul>
+var isCheckedIn = 0;
+var totalPeople = 0;
+var dietaryAccommodations  = 0;
+var physicalAccommodations = 0;
 
 const Index = (props) => (
   <Layout>
@@ -18,16 +22,19 @@ const Index = (props) => (
       <ul>
       {fillList(props)}
       </ul>
+      <p>
+        {isCheckedIn} / {totalPeople} people checked in; {dietaryAccommodations} dietary accommodations; {physicalAccommodations} physical accommodations 
+      </p>
     </div>
   </Layout>
 )
 
 function fillList( props )
 {
-  var isCheckedIn = 0;
-  var totalPeople = props.count;
-  var dietaryAccommodations  = 0;
-  var physicalAccommodations = 0;
+  isCheckedIn = 0;
+  totalPeople = props.count;
+  dietaryAccommodations  = 0;
+  physicalAccommodations = 0;
   var toDisplay = []
   var i = 0;
   for (i = 0; i < totalPeople; i++)

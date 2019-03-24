@@ -1,0 +1,11 @@
+Hey, totally did not procrastinate on this, and its still a work in progress but first time doing something like this!
+How to run:
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+Make sure you have Next.js
+Navigate to directory containing server.js
+open bash/terminal
+
+npm install           (might not be needed)
+npm run dev
+
+go to localhost:3000 in browser

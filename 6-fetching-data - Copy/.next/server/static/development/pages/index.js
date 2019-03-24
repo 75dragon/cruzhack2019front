@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -122,7 +122,7 @@ function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     style: linkStyle
   }, "Announcements")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/Check Ins"
+    href: "/CheckIns"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     style: linkStyle
   }, "Check Ins")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -1250,15 +1250,20 @@ __webpack_require__.r(__webpack_exports__);
 //     ))}
 //   </ul>
 
+var isCheckedIn = 0;
+var totalPeople = 0;
+var dietaryAccommodations = 0;
+var physicalAccommodations = 0;
+
 var Index = function Index(props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, fillList(props))));
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, fillList(props)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, isCheckedIn, " / ", totalPeople, " people checked in; ", dietaryAccommodations, " dietary accommodations; ", physicalAccommodations, " physical accommodations")));
 };
 
 function fillList(props) {
-  var isCheckedIn = 0;
-  var totalPeople = props.count;
-  var dietaryAccommodations = 0;
-  var physicalAccommodations = 0;
+  isCheckedIn = 0;
+  totalPeople = props.count;
+  dietaryAccommodations = 0;
+  physicalAccommodations = 0;
   var toDisplay = [];
   var i = 0;
 
@@ -1321,14 +1326,14 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Austin Cheng\Desktop\github\cruzhack2019front\next-learn-demo\6-fetching-data - Copy\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Users\Austin Cheng\Desktop\github\cruzhack2019front\6-fetching-data - Copy\pages\index.js */"./pages/index.js");
 
 
 /***/ }),

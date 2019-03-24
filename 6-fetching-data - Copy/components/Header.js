@@ -13,7 +13,7 @@ export default function Header() {
       <Link href="/Announcements">
         <a style={linkStyle}>Announcements</a>
       </Link>
-      <Link href="/Check Ins">
+      <Link href="/CheckIns">
         <a style={linkStyle}>Check Ins</a>
       </Link>
       <Link href="/Applications">
